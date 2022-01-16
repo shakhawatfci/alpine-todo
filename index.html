@@ -39,7 +39,7 @@
 
                 <ul class="list-unstyled">
                  <template x-for="(tod , index)  in todos">
-                            <li class="mt-2 bg-white shadow p-1" style="display: flex;justify-content: space-between;" x-transition>
+                            <li class="mt-2 bg-white shadow p-1" style="display: flex;justify-content: space-between;transition: 2s" x-transition.duration.2000ms>
                                 <span x-text="tod"></span>
                                 <a href="" class="float-right text-danger" x-on:click.prevent="removeTodo(index)">X</a>
                             </li>
